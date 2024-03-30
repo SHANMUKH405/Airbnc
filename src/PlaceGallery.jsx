@@ -37,7 +37,7 @@ export default function PlaceGallery({ place }) {
               <div key={photo}>
                 <img
                   className=" rounded-xl"
-                  src={"http://localhost:4002/uploads/" + photo}
+                  src={"https://airbnc-backend.onrender.com/uploads/" + photo}
                   alt=""
                 />
               </div>
@@ -55,7 +55,10 @@ export default function PlaceGallery({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className=" cursor-pointer aspect-square object-cover"
-                src={"http://localhost:4002/uploads/" + place.photos[0]}
+                src={
+                  "https://airbnc-backend.onrender.com/uploads/" +
+                  place.photos[0]
+                }
                 alt=""
               />
             </div>
@@ -66,7 +69,9 @@ export default function PlaceGallery({ place }) {
             <img
               onClick={() => setShowAllPhotos(true)}
               className=" cursor-pointer aspect-square object-cover"
-              src={"http://localhost:4002/uploads/" + place.photos[1]}
+              src={
+                "https://airbnc-backend.onrender.com/uploads/" + place.photos[1]
+              }
               alt=""
             />
           )}
@@ -77,7 +82,10 @@ export default function PlaceGallery({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className=" cursor-pointer aspect-square object-cover relative top-2 "
-                src={"http://localhost:4002/uploads/" + place.photos[2]}
+                src={
+                  "https://airbnc-backend.onrender.com/uploads/" +
+                  place.photos[2]
+                }
                 alt=""
               />
             )}

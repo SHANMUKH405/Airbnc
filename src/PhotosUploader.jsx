@@ -77,7 +77,7 @@ export default function PhotosUploader({ addphotos, onChange }) {
             <div className="h-32 flex relative" key={link}>
               <img
                 className="rounded-2xl w-full object-cover"
-                src={"http://localhost:4002/uploads/" + link}
+                src={"https://airbnc-backend.onrender.com/uploads/" + link}
                 alt="Uploaded"
               />
               {/* for deleting the photo */}

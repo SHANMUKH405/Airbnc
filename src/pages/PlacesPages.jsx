@@ -55,7 +55,10 @@ export default function PlacesPages() {
                     {place.photos.length > 0 && (
                       <img
                         className=" rounded-xl w-full h-full object-cover"
-                        src={"http://localhost:4002/uploads/" + place.photos[0]}
+                        src={
+                          "https://airbnc-backend.onrender.com/uploads/" +
+                          place.photos[0]
+                        }
                         alt=""
                       />
                     )}

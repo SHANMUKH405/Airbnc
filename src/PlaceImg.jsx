@@ -9,7 +9,7 @@ export default function PlaceImg({ place, index = 0, className = null }) {
   return (
     <img
       className=" rounded-xl w-full h-full object-cover"
-      src={"http://localhost:4002/uploads/" + place.photos[index]}
+      src={"https://airbnc-backend.onrender.com/uploads/" + place.photos[index]}
       alt=""
     />
   );
